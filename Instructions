@@ -1,0 +1,27 @@
+You need to have Python 2 installed for this, it will not work with Python 3. There is a small syntax in the code. I have fixed it and attached the code2.py file.
+
+You will need to install the following libraries to get the code running:
+opencv-python
+numpy
+matplotlib
+segment
+
+To install the library, type: pip install <library-name>
+-Use code5.py to run the project
+
+In command shell, type the command:
+python <directory to code file> -i1 <directory to image file> -i2 <directory to image 2 file> -i3 <directory to image 3 file> -a <correction-type>
+Example:
+python C:\Users\Sukaina\Desktop\Body-Measurement-using-Computer-Vision-master\src\code2.py -i1 C:\Users\Sukaina\Desktop\Body-Measurement-using-Computer-Vision-master\Images\aman1.jpg -i2 C:\Users\Sukaina\Desktop\Body-Measurement-using-Computer-Vision-master\Images\aman2.jpg -i3 C:\Users\Sukaina\Desktop\Body-Measurement-using-Computer-Vision-master\Images\aman3.jpg -a True
+
+
+-First 2 images that pops up is for finding waist circumference. Mark waist ends on both the image.
+-Next 2 images are for calculating shoulder length. Mark fall near neck both sides in first image and mark shoulder, both-sides in second image.
+-Repeat step 2 again. This is again calculating shoulder length for robustness from different image.
+-Mark both the wrist - end of hands nearly in the next popped image.
+-While in 2,3,4 points, there is also projected points shown. You can manually mark or not mark.
+-Press esc after marking on images.
+-View output.csv to view your results i.e small,medium,large
+-You can upload your 3 images with green background in three positions indicated in images folder.
+
+
