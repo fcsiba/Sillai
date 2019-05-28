@@ -1,18 +1,24 @@
-You need to have Python 2 installed for this, it will not work with Python 3. There is a small syntax in the code. I have fixed it and attached the code2.py file.
+Step 1: Download the app-debug.apk file to your android phones
+Step2: Upload pictures by clicking the "upload picture" button 
+       - 1st with checker board
+       - 2nd facing the right direction
+       - 3rd with arms in the air
+Step 3: Run the code:
+You need to have Python 3.6.3 installed for this.
 
 You will need to install the following libraries to get the code running:
 opencv-python
 numpy
 matplotlib
 segment
+pandas
+sklearn
 
 To install the library, type: pip install <library-name>
--Use code5.py to run the project
+python app.py -a False -u <username>
 
-In command shell, type the command:
-python <directory to code file> -i1 <directory to image file> -i2 <directory to image 2 file> -i3 <directory to image 3 file> -a <correction-type>
 Example:
-python C:\Users\Sukaina\Desktop\Body-Measurement-using-Computer-Vision-master\src\code2.py -i1 C:\Users\Sukaina\Desktop\Body-Measurement-using-Computer-Vision-master\Images\aman1.jpg -i2 C:\Users\Sukaina\Desktop\Body-Measurement-using-Computer-Vision-master\Images\aman2.jpg -i3 C:\Users\Sukaina\Desktop\Body-Measurement-using-Computer-Vision-master\Images\aman3.jpg -a True
+python app.py -a False -u aman
 
 
 -First 2 images that pops up is for finding waist circumference. Mark waist ends on both the image.
@@ -21,7 +27,8 @@ python C:\Users\Sukaina\Desktop\Body-Measurement-using-Computer-Vision-master\sr
 -Mark both the wrist - end of hands nearly in the next popped image.
 -While in 2,3,4 points, there is also projected points shown. You can manually mark or not mark.
 -Press esc after marking on images.
--View output.csv to view your results i.e small,medium,large
+-you can view your measurements in you app.
+-you can also View output.csv to view your results i.e small,medium,large
 -You can upload your 3 images with green background in three positions indicated in images folder.
 
 
