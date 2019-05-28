@@ -1,0 +1,7 @@
+opencv-python
+numpy
+matplotlib
+segment
+pandas
+sklearn
+pyrebase
